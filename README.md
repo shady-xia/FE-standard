@@ -4,8 +4,6 @@
 
 ## 前言
 
-
-
 ## 目录
 
 - [JavaScript开发规范](javascript.md)
