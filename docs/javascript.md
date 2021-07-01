@@ -1,6 +1,6 @@
 # JavaScript开发规范
 
-## 前言
+## 前言 :id=start
 
 本规范以[Airbnb JavaScript Style](https://github.com/airbnb/javascript)为蓝本，根据团队的风格进行派生和改动
 
@@ -9,7 +9,7 @@
 > 3、去除了一些不常用的、明显的错误写法及基本前端常识相关的条例
 > 4、根据团队的习惯，对部分风格相关的条例有所修改
 
-## 1. 类型和引用
+## 1. 类型和引用 :id=types
 
 - [1.1](#1.1) **基本类型**: 直接存取基本类型。
 
@@ -86,7 +86,7 @@ console.log(b); // ReferenceError
 ```
 
 
-## 2. 对象
+## 2. 对象 :id=object
 
 - [2.1](#2.1) 使用字面值创建对象。eslint: [`no-new-object`](http://eslint.org/docs/rules/no-new-object.html)
 
@@ -252,7 +252,7 @@ const copy = { ...original, c: 3 }; // copy => { a: 1, b: 2, c: 3 }
 const { a, ...noA } = copy; // noA => { b: 2, c: 3 }
 ``` 
 
-## 3. 数组
+## 3. 数组 :id=array
 
 - [3.1](#3.1) 使用字面值创建数组。eslint: [`no-array-constructor`](http://eslint.org/docs/rules/no-array-constructor.html)
 
@@ -409,7 +409,7 @@ const numberInArray = [
 ```
 
 
-## 4. 解构
+## 4. 解构 :id=destructuring
 
 - [4.1](#4.1) 用对象的解构赋值来获取和使用对象某个或多个属性值。eslint: [`prefer-destructuring`](https://eslint.org/docs/rules/prefer-destructuring)
 
@@ -473,7 +473,7 @@ const { left, right } = processInput(input);
 ```
 
 
-## 5. Strings
+## 5. Strings :id=strings
 
 - [5.1](#5.1) 字符串使用单引号 `''` 。eslint: [`quotes`](https://eslint.org/docs/rules/quotes.html)
 
@@ -530,7 +530,8 @@ return `How are you, ${name}?`;
 
 - [5.4](#5.4) 永远不要在字符串中用`eval()`，他就是潘多拉盒子。 eslint: [`no-eval`](https://eslint.org/docs/rules/no-eval)
 
-## 6. 函数
+## 6. 函数 :id=functions
+
 - [6.1](#6.1) 把立即执行函数包裹在圆括号里。 eslint: [`wrap-iife`](http://eslint.org/docs/rules/wrap-iife.html)
 
 > Why? 一个立即调用的函数表达式是一个单元，把它和他的调用者（圆括号）包裹起来能更清晰地体现出这一点。
@@ -757,7 +758,7 @@ console.log(
 );
 ```
 
-## 7. 箭头函数
+## 7. 箭头函数 :id=arrowFunctions
 
 - [7.1](#7.1) 当你一定要用函数表达式（在回调函数里）的时候就用箭头表达式吧。 eslint: [`prefer-arrow-callback`](http://eslint.org/docs/rules/prefer-arrow-callback.html), [`arrow-spacing`](http://eslint.org/docs/rules/arrow-spacing.html)
 
@@ -893,7 +894,7 @@ const itemHeight = (item) => {
 ```
 
 
-## 8. Class & Constructors
+## 8. Class & Constructors :id=class
 
 - [8.1](#8.1) 常用`class`，避免直接操作`prototype`
 
@@ -1062,7 +1063,7 @@ class Foo {
 }
 ```
 
-## 9. 模块
+## 9. 模块 :id=module
 
 - [9.1](#9.1) 用(`import`/`export`) 模块而不是无标准的模块系统。
 
@@ -1204,7 +1205,7 @@ import bar from './bar';
 import baz from './baz';
 ```
 
-## 10. 属性和变量
+## 10. 属性和变量 :id=properties
 
 - [10.1](#10.1) 访问属性时使用点符号. eslint: [`dot-notation`](http://eslint.org/docs/rules/dot-notation.html)
 
@@ -1438,7 +1439,7 @@ var { type, ...coords } = data;
 // 'coords' 现在就是一个没有 'type' 属性的 'data' 对象
 ```
 
-## 11. 比较运算符
+## 11. 比较运算符 :id=comparison
 
 - [11.1](#11.1) 用 `===` 和 `!==` 而不是 `==` 和 `!=`. eslint: [`eqeqeq`](http://eslint.org/docs/rules/eqeqeq.html)
 > 以此避免一些隐式类型转换的坑
@@ -1608,7 +1609,7 @@ if (a || (b && c)) {
 const bar = a + b / c * d;
 ```
 
-## 12. 代码块
+## 12. 代码块 :id=blocks
 
 - [12.1](#12.1) 用大括号包裹多行代码块。  eslint: [`nonblock-statement-body-position`](https://eslint.org/docs/rules/nonblock-statement-body-position)
 
@@ -1784,7 +1785,7 @@ if (!isRunning) {
 }
 ```
 
-## 13. 注释
+## 13. 注释 :id=comments
 
 - [13.1](#13.1) 多行注释用 `/** ... */`
 
@@ -1930,7 +1931,7 @@ class Calculator extends Abacus {
   */
 ```
 
-## 14. 空格
+## 14. 空格 :id=whitespaces
 
 - [14.1](#14.1) tab用四个空格作为缩进
 
@@ -2374,7 +2375,7 @@ var x = 1;
 var y = 2;
 ```
 
-## 15. 逗号
+## 15. 逗号 :id=commas
 
 - [15.1](#15.1) 不要前置逗号。 eslint: [`comma-style`](http://eslint.org/docs/rules/comma-style.html)
 
@@ -2489,7 +2490,7 @@ createHero(
 )
 ```
 
-## 16. 分号
+## 16. 分号 :id=semicolons
 
 - [16.1](#21.1) **关于是否加分号** eslint: [`semi`](http://eslint.org/docs/rules/semi.html)
 
@@ -2509,7 +2510,7 @@ createHero(
 
 [Read more](https://stackoverflow.com/questions/7365172/semicolon-before-self-invoking-function/7365214%237365214).
 
-## 17. 类型转换
+## 17. 类型转换 :id=typeCasting
 
 - [17.1](#17.1) 在语句开始执行强制类型转换。
 
@@ -2582,7 +2583,7 @@ const hasAge = !!age;
 ```
 
 
-## 18. 命名规范
+## 18. 命名规范 :id=namingConventions
 
 - [18.1](#18.1) 避免用一个字母命名，让你的命名可描述。 eslint: [`id-length`](http://eslint.org/docs/rules/id-length)
 
@@ -2791,7 +2792,7 @@ export const MAPPING = {
 };
 ```
 
-## 19. jQuery
+## 19. jQuery :id=jquery
 
 - [19.1](#19.1) jQuery对象用`$`变量表示。
 

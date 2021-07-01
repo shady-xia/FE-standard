@@ -1,7 +1,7 @@
 
 # Vue 项目开发规范
 
-## 前言
+## 前言 :id=start
 
 Vue 项目规范以 Vue官方规范（[https://cn.vuejs.org/v2/style-guide/](https://cn.vuejs.org/v2/style-guide/)）为基础进行开发，同时参照了诸多开发团队的经验，尽量保证了该规范在不同vue团队下的的通用性和统一性。
 
@@ -10,7 +10,7 @@ Vue 项目规范以 Vue官方规范（[https://cn.vuejs.org/v2/style-guide/](htt
 > `camelCase`（骆驼拼写法，首字母小写）
 > `kebab-case`（短横拼写法）
 
-## 1. 组件命名规范
+## 1. 组件命名规范 :id=naming
 
 A. 组件的文件名称、组件的`name`属性、导入导出组件时，统一使用大驼峰 `PascalCase`  的书写规范
 
@@ -68,7 +68,7 @@ export default {
 ```
 
 
-## 2. Prop 定义规范
+## 2. Prop 定义规范 :id=prop
 
 **2.1 在声明 `prop` 时，遵循以下的规范：**
 - 必须指定类型
@@ -133,7 +133,7 @@ props: {
 <welcome-message greeting-text="hi"></welcome-message>
 ```
 
-## 3. Vue 中的书写顺序
+## 3. Vue 中的书写顺序 :id=order
 
 **3.1 vue 选项的声明顺序**
 
@@ -208,7 +208,7 @@ export default {
 - foo="a" bar="b" baz="c"
 ```
 
-## 4. Vue 通用规范
+## 4. Vue 通用规范 :id=common
 
 **4.1 多个 attribute 的元素应该分多行撰写，每个 attribute 一行**
 
@@ -314,7 +314,7 @@ export default {
 
 模块命名尽量和后端对模块的命名保持一致，这样方便对接api，也保证了前后端的一致性
 
-## 5. Vue Router 规范
+## 5. Vue Router 规范 :id=router
 
 **5.1 使用懒加载机制**
 
@@ -327,7 +327,7 @@ export default {
 this.$router.push({ name: 'home' })
 ```
 
-## 6. Vue 项目目录规范
+## 6. Vue 项目目录规范 :id=contents
 
 针对一个完整的 `Vue` 项目，它的目录应遵循以下的规范
 
