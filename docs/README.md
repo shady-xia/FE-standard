@@ -1,7 +1,7 @@
 # FE-standard 前端项目开发规范
 > 用更合理的方式书写前端
 
-[https://shady-xia.github.io/FE-standard/](http://blog.mshady.com/FE-standard)
+[https://shady-xia.github.io/FE-standard/](https://shady-xia.github.io/FE-standard)
 
 ## 前言
 
